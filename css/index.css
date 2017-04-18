@@ -1,10 +1,111 @@
 @charset 'utf-8';
+.w {
+  width: 10rem;
+}
 body {
   margin: 0;
   padding: 0;
 }
-div {
-  width: 12rem;
-  height: 12rem;
-  background-color: blue;
+ul,
+li {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.clearfix:after {
+  clear: both;
+}
+.nav {
+  width: 10rem;
+  height: 1.125rem;
+  font-family: '微软雅黑';
+}
+.nav li {
+  display: block;
+  margin-left: 0.65625rem;
+  width: 1.09375rem;
+  height: 1.125rem;
+  float: left;
+  text-align: center;
+  line-height: 1.125rem;
+  font-size: 32px;
+}
+.nav li .redt {
+  position: relative;
+  margin-top: -0.0625rem;
+  width: 1.09375rem;
+  height: 0.09375rem;
+  background-color: #be0201;
+}
+.daohang {
+  width: 10rem;
+  height: 1.125rem;
+  background-color: #e6e6e6;
+}
+.shouye {
+  width: 10rem;
+  height: 5rem;
+}
+.word {
+  height: 0.8125rem;
+  width: 10rem;
+  background-color: #e6e6e6;
+}
+.content {
+  margin: 0.296875rem 0.375rem 0.296875rem 0.375rem;
+  width: 9.25rem;
+  height: 1.625rem;
+}
+.content .box {
+  width: 2.1875rem;
+  height: 1.625rem;
+}
+.content .title {
+  position: relative;
+  top: -1.625rem;
+  left: 2.5625rem;
+  width: 6.046875rem;
+  height: 0.65625rem;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  line-height: 0.65625rem;
+  font-family: '微软雅黑';
+  font-size: 24px;
+}
+.content .description {
+  position: relative;
+  left: 2.5625rem;
+  top: -1.625rem;
+  margin-top: 0.078125rem;
+  width: 6.046875rem;
+  height: 0.890625rem;
+  background-color: red;
+  word-wrap: normal;
+  overflow: hidden;
+  color: #808080;
+}
+.content .description .gentie {
+  height: 0.859375rem;
+}
+.special {
+  position: relative;
+  margin-right: 0.625rem;
+  top: -1.625rem;
+  float: right;
+  height: 0.4375rem;
+  width: 0.859375rem;
+  background-color: green;
+  text-align: center;
+  line-height: 0.859375rem;
+  z-index: 200;
+}
+.border {
+  margin: 0 0.375rem 0 0.375rem;
+  width: 9.25rem;
+  height: 0.03125rem;
+  background-color: #e6e6e6;
+  border-radius: 0.03125rem;
 }

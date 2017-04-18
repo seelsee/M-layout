@@ -1,14 +1,121 @@
 @charset 'utf-8';
+@c:64rem;
+.w {
+	width: 640/@c;
+}
 body {
 	margin: 0;
 	padding: 0;
 	
 }
-// html {
-// 	font-size: 64px;
-// }
-div {
-	width: 12rem;
-	height: 12rem;
-	background-color: blue;
+ul, li {
+	text-decoration: none;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.clearfix:after {
+	clear: both;
+}
+.nav {
+	.w;
+	height: 72/@c;
+	font-family: '微软雅黑';
+	
+	li {
+		display: block;
+		margin-left: 42/@c;
+		width: 70/@c;
+		height: 72/@c;
+		float: left;
+		text-align: center;
+		line-height: 72/@c;
+		font-size: 32px;
+		.redt {
+			position: relative;
+			margin-top: -4/@c;
+			width: 70/@c;
+			height: 6/@c;
+			background-color: rgb(190, 2, 1);
+		}
+	}
+}
+.daohang {
+	.w;
+	height: 72/@c;
+	background-color: rgb(230, 230, 230);
+}
+.shouye {
+	.w;
+	height: 320/@c; 
+}
+.word {
+	height: 52/@c;
+	.w;
+	background-color: rgb(230, 230, 230);
+}
+.content {
+	margin: 19/@c 24/@c 19/@c 24/@c;
+	width: (640-24*2)/@c;
+	height: (142-19*2)/@c;
+	// background-color: red;
+	.box {
+		width: 140/@c;
+		height: 104/@c;
+		
+	}
+	.title {
+		position: relative;
+		top: -104/@c;
+		left: (140+24)/@c;
+		// float: left;
+		width: (435-24*2)/@c;
+		height: 42/@c;
+		// background-color: rgba(150, 150, 150, 0.5);
+		white-space: nowrap;
+		word-wrap: normal;
+		overflow: hidden; 
+		line-height: 42/@c;
+		font-family: '微软雅黑';
+		font-size: 24px;
+	}
+	.description {
+		position: relative;
+		left: (140+24)/@c;
+		top: -104/@c;
+		margin-top: 5/@c;
+		width: (435-24*2)/@c;
+		height: 57/@c;
+		background-color: red;
+		// white-space: nowrap;
+		word-wrap: normal;
+		overflow: hidden;
+		color: rgb(128, 128, 128);
+		.gentie {
+			height: 55/@c;
+			// width: 28/@c;
+		}
+		
+		}
+	}
+	.special {
+			position: relative;
+			margin-right: 40/@c;
+			top: -104/@c;
+			float: right;
+			height: 28/@c;
+			width: 55/@c;
+			background-color: green;
+			text-align: center;
+			line-height: 55/@c;
+			z-index: 200;
+}
+.border {
+	margin: 0 24/@c 0 24/@c;
+	width: (640-24*2)/@c;
+	height: 2/@c;
+	background-color: rgb(230, 230, 230);
+	border-radius: 2/@c;
+
 }

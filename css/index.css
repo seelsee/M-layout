@@ -25,7 +25,6 @@ img {
 .nav li {
   display: block;
   margin-left: 0.65625rem;
-  width: 1.09375rem;
   height: 1.125rem;
   float: left;
   text-align: center;
@@ -56,6 +55,8 @@ img {
   background-color: rgba(230, 230, 230, 0.9);
 }
 .word .tuji {
+  position: relative;
+  float: left;
   margin: 0.1875rem 0 0.1875rem 0.375rem;
   height: 0.4375rem;
   width: 0.875rem;
@@ -63,6 +64,17 @@ img {
   color: #fff;
   text-align: center;
   line-height: 0.4375rem;
+}
+.word .word-com {
+  position: relative;
+  float: left;
+  margin: 0.1875rem 0 0.1875rem 0.375rem;
+  height: 0.4375rem;
+  width: 4.6875rem;
+  color: #5a5a5a;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
 }
 .content {
   position: relative;
@@ -140,4 +152,26 @@ img {
   height: 0.03125rem;
   background-color: #e6e6e6;
   border-radius: 0.03125rem;
+}
+.af2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 10.9375rem;
+  background-color: #fff;
+  z-index: 500;
+}
+.af2 .column {
+  height: 1.125rem;
+  background-color: #e6e6e6;
+}
+.af2 .added {
+  height: 3.125rem;
+  background-color: #fff;
+}
+.af2 ul {
+  margin: 0.828125rem 0.59375rem 0.828125rem 0.59375rem;
+  height: 2.34375rem;
+  background-color: rgba(111, 111, 111, 0.5);
 }

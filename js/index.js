@@ -12,6 +12,7 @@ request.onreadystatechange = function () {
             img.setAttribute("src",json[0].imgURL);
             var title = document.querySelector('.title');
             title.innerHTML = json[0].title;
+            document.querySelector('.word-com').innerHTML = json[0].title;
             var description = document.querySelector('.description');
             description.innerHTML = json[0].description;
             var special = document.querySelector('.special');
@@ -60,7 +61,7 @@ xmr.onreadystatechange = function () {
         if (xmr.status === 200) {
             
             var json2 = JSON.parse(xmr.responseText);
-            console.log(json2)
+            console.log(json2);
             json2[0].imgURL = encodeURI(json2[0].imgURL); 
             json2[0].imgURL = encodeURI(json2[0].imgURL);
             var img2 = document.getElementsByTagName("img")[0];
@@ -83,3 +84,7 @@ xmr.onreadystatechange = function () {
 xmr.open('GET', '/sliders');
 xmr.send();
 
+var button = document.querySelector('.button');
+button.addEventListener('click',function() {
+    document.querySelector('.er').classList.add('af2');
+})

@@ -26,7 +26,7 @@ img {
 	li {
 		display: block;
 		margin-left: 42/@c;
-		width: 70/@c;
+		// width: 70/@c;
 		height: 72/@c;
 		float: left;
 		text-align: center;
@@ -40,6 +40,7 @@ img {
 			background-color: rgb(190, 2, 1);
 		}
 	}
+
 }
 .daohang {
 	.w;
@@ -57,6 +58,8 @@ img {
 	.w;
 	background-color: rgba(230, 230, 230, .9);
 	.tuji {
+		position: relative;
+		float: left;
 		margin: 12/@c 0 12/@c 24/@c;
 		height: 28/@c;
 		width: 56/@c;
@@ -64,6 +67,18 @@ img {
 		color: #fff;
 		text-align: center;
 		line-height: 28/@c;
+	}
+	.word-com {
+		position: relative;
+		float: left;
+		margin: 12/@c 0 12/@c 24/@c;
+		height: 28/@c;
+		width: 300/@c;
+		// background-color: red;
+		color: rgb(90, 90, 90);
+		white-space: nowrap;
+		word-wrap: normal;
+		overflow: hidden; 
 	}
 }
 .content {
@@ -155,4 +170,27 @@ img {
 	background-color: rgb(230, 230, 230);
 	border-radius: 2/@c;
 
+}
+.af2 {
+	display: block;
+	position: absolute;
+	top: 0;
+	.w;
+	height: 700/@c;//auto
+	background-color: #fff;
+	z-index: 500;
+	.column {
+		height: 72/@c;
+		background-color: #e6e6e6;
+	}
+	.added {
+	height: 200/@c;//auto
+	background-color: #fff;
+	
+	}
+	ul {
+		margin: 53/@c 38/@c 53/@c 38/@c;
+		height: 150/@c;//auto
+		background-color: rgba(111, 111, 111, 0.5);
+	}
 }
